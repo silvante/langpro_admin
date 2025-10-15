@@ -4,7 +4,7 @@ import playlistService from "@/app/api/services/playlistsService";
 import { Courses, User } from "@/app/types/User";
 import { Minus } from "lucide-react";
 import { useContext, useState } from "react";
-import { UserContext } from "../page";
+import { UserContext } from "../UserContext";
 
 export default function CourseCard({ course }: { course: Courses }) {
   const [loading, setLoading] = useState(false);

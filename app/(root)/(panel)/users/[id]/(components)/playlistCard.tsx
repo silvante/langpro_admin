@@ -4,7 +4,7 @@ import playlistService from "@/app/api/services/playlistsService";
 import { Courses, Playlist, User } from "@/app/types/User";
 import { Plus } from "lucide-react";
 import { useContext, useState } from "react";
-import { UserContext } from "../page";
+import { UserContext } from "../UserContext";
 
 export default function PlaylistCards({
   playlist,
@@ -33,7 +33,7 @@ export default function PlaylistCards({
       if (error.response && error.response.data) {
         setError(
           error.response.data.message ||
-            "An error occurred while validating the password."
+          "An error occurred while validating the password."
         );
       }
     } finally {
