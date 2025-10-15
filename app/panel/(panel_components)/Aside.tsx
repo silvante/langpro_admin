@@ -1,4 +1,4 @@
-import Logotype from "@/app/(global_components)/Logotype";
+import Logotype from "@/app/(global_components)/Logo";
 
 export default function Aside() {
   return (
