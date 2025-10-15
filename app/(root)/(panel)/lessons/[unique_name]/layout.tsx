@@ -12,15 +12,13 @@ import playlistService from "@/app/api/services/playlistsService";
 import { Playlist } from "@/app/types/User";
 import PageMessage from "@/app/(global_components)/PageMessage";
 import Loader from "@/app/(global_components)/Loader";
-import { createContext } from "react";
+import { GlobalContext } from "./GlobalContext";
 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-roboto",
 });
-
-export const GlobalContext = createContext<any>(null);
 
 export default function RootLayout({
   children,

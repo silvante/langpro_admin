@@ -6,8 +6,8 @@ import { MailWarning, Youtube } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState, useContext } from "react";
 import lessonService from "@/app/api/services/lessonService";
-import { GlobalContext } from "../../../layout";
 import { LessonContext } from "../LessonContext";
+import { GlobalContext } from "../../../GlobalContext";
 
 export default function UpdateLessonForm() {
   const [error, setError] = useState<string | null>(null);

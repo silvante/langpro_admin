@@ -3,14 +3,13 @@ import { Roboto } from "next/font/google";
 import "@/app/globals.css";
 import { useContext, useState } from "react";
 import { Lesson } from "@/app/types/User";
-import { createContext } from "react";
-import { GlobalContext } from "../../layout";
 import { useParams } from "next/navigation";
 import Heading from "@/app/(global_components)/Heading";
 import Link from "next/link";
 import PageMessage from "@/app/(global_components)/PageMessage";
 import { Edit, Trash2 } from "lucide-react";
 import { LessonContext } from "./LessonContext";
+import { GlobalContext } from "../../GlobalContext";
 
 const roboto = Roboto({
   subsets: ["latin"],
