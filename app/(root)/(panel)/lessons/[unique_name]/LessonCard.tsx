@@ -2,7 +2,7 @@ import { Lesson } from "@/app/types/User";
 import { PlayCircle } from "lucide-react";
 import Link from "next/link";
 import { useContext } from "react";
-import { GlobalContext } from "./layout";
+import { GlobalContext } from "./GlobalContext";
 
 export default function LessonCard({ lesson }: { lesson: Lesson }) {
   const { playlist } = useContext(GlobalContext);

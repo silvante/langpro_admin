@@ -5,8 +5,8 @@ import { Lesson, Playlist } from "@/app/types/User";
 import { MailWarning, Youtube } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState, useContext } from "react";
-import { GlobalContext } from "../layout";
 import lessonService from "@/app/api/services/lessonService";
+import { GlobalContext } from "../GlobalContext";
 
 export default function NewLessonForm() {
   const [error, setError] = useState<string | null>(null);

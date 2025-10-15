@@ -6,10 +6,9 @@ import { User } from "@/app/types/User";
 import { Undo2 } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { createContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import AddToCourse from "./(components)/AddToCourse";
-
-export const UserContext = createContext<any>(null);
+import { UserContext } from "./UserContext";
 
 export default function UserDetailsPage() {
   const { id } = useParams();

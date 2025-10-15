@@ -8,7 +8,7 @@ import { Playlist } from "@/app/types/User";
 import { useRouter } from "next/navigation";
 import { useState, useEffect, useContext } from "react";
 import { useDispatch } from "react-redux";
-import { GlobalContext } from "../layout";
+import { GlobalContext } from "../GlobalContext";
 
 export default function UpdatePlaylistForm() {
   const [error, setError] = useState<string | null>(null);

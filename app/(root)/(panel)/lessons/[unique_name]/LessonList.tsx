@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { GlobalContext } from "./layout";
 import { Lesson } from "@/app/types/User";
 import PageMessage from "@/app/(global_components)/PageMessage";
 import LessonCard from "./LessonCard";
+import { GlobalContext } from "./GlobalContext";
 
 export default function LessonsList() {
   const { playlist } = useContext(GlobalContext);

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useContext } from "react";
-import { GlobalContext } from "./layout";
 import { BadgePlus } from "lucide-react";
+import { GlobalContext } from "./GlobalContext";
 
 export default function CreateLessonButton() {
   const { playlist } = useContext(GlobalContext);
