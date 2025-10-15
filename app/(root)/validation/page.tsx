@@ -1,3 +1,4 @@
+"use client"
 import Logo from "@/app/(global_components)/Logo";
 import ValidationForm from "./ValidationForm";
 
