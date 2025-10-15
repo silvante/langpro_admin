@@ -1,8 +1,8 @@
 "use client";
 import { useContext, useState } from "react";
-import { LessonContext } from "../layout";
 import vocService from "@/app/api/services/vocService";
 import { Lesson, Vocs } from "@/app/types/User";
+import { LessonContext } from "../LessonContext";
 
 export default function NewVocForm() {
   const { lesson, setLesson } = useContext(LessonContext);

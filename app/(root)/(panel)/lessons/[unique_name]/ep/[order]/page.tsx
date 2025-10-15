@@ -2,7 +2,7 @@
 import { useContext } from "react";
 import PageMessage from "@/app/(global_components)/PageMessage";
 import VocManager from "./(Vocs)/Vacabluarymanager";
-import { LessonContext } from "./layout";
+import { LessonContext } from "./LessonContext";
 
 export default function LessonDetails() {
   const { lesson } = useContext(LessonContext);

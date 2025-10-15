@@ -1,12 +1,12 @@
 "use client";
 import NewVocForm from "./NewVocForm";
 import { useContext, useEffect, useState } from "react";
-import { LessonContext } from "../layout";
 import Loader from "@/app/(global_components)/Loader";
 import vocService from "@/app/api/services/vocService";
 import { Lesson, Vocs } from "@/app/types/User";
 import PageMessage from "@/app/(global_components)/PageMessage";
 import VocCard from "./VocCard";
+import { LessonContext } from "../LessonContext";
 
 export default function VocManager() {
   const { lesson, setLesson } = useContext(LessonContext);

@@ -2,10 +2,9 @@
 import { Lesson, Vocs } from "@/app/types/User";
 import { Trash2 } from "lucide-react";
 import { useContext, useState } from "react";
-import { LessonContext } from "../layout";
-import { useRouter } from "next/navigation";
 import Loader from "@/app/(global_components)/Loader";
 import vocService from "@/app/api/services/vocService";
+import { LessonContext } from "../LessonContext";
 
 export default function VocCard({ voc, i }: { voc: Vocs; i: number }) {
   const is_even = i % 2 === 0;

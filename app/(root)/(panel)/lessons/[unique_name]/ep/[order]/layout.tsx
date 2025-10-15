@@ -10,18 +10,13 @@ import Heading from "@/app/(global_components)/Heading";
 import Link from "next/link";
 import PageMessage from "@/app/(global_components)/PageMessage";
 import { Edit, Trash2 } from "lucide-react";
+import { LessonContext } from "./LessonContext";
 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-roboto",
 });
-
-export const LessonContext = createContext<{
-  lesson: any;
-  setLesson: (data: any) => void;
-  current_link: string
-} | null>(null);
 
 export default function RootLayout({
   children,

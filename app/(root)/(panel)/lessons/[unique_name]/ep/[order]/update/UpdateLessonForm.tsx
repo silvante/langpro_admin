@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { useState, useContext } from "react";
 import lessonService from "@/app/api/services/lessonService";
 import { GlobalContext } from "../../../layout";
-import { LessonContext } from "../layout";
+import { LessonContext } from "../LessonContext";
 
 export default function UpdateLessonForm() {
   const [error, setError] = useState<string | null>(null);

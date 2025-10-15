@@ -1,12 +1,12 @@
 "use client";
 import Heading from "@/app/(global_components)/Heading";
 import { useContext, useState } from "react";
-import { LessonContext } from "../layout";
 import Link from "next/link";
 import lessonService from "@/app/api/services/lessonService";
 import { GlobalContext } from "../../../layout";
 import { Playlist } from "@/app/types/User";
 import { useRouter } from "next/navigation";
+import { LessonContext } from "../LessonContext";
 
 export default function DeleteLessonPage() {
   const { lesson, current_link } = useContext(LessonContext);
