@@ -17,7 +17,11 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
-export const LessonContext = createContext<any>(null);
+export const LessonContext = createContext<{
+  lesson: any;
+  setLesson: (data: any) => void;
+  current_link: string
+} | null>(null);
 
 export default function RootLayout({
   children,
